@@ -4,7 +4,7 @@ module.exports = {
         "es6": true,
         "jest": true
     },
-    "extends": "eslint:recommended",
+    "extends": ["plugin:flowtype/recommended"],
     "parserOptions": {
         "ecmaFeatures": {
             "experimentalObjectRestSpread": true,
@@ -13,7 +13,8 @@ module.exports = {
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "flowtype"
     ],
     "rules": {
         "indent": [
