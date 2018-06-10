@@ -1,0 +1,14 @@
+.PhotoGallery {
+  background: #0E0E0E;
+  color: whitesmoke;
+}
+
+.photo-box {
+  align-items: center;
+  height: 100vh;
+}
+
+.img-fluid {
+  max-width: auto;
+  max-height: 100vh;
+}

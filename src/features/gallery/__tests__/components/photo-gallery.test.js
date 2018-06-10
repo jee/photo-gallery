@@ -32,8 +32,8 @@ describe('PhotoGallery', () => {
       ];
       const wrapper = shallow(<PhotoGallery photos={mockPhotoData} index={0} navNextPhoto={jest.fn()} navBackPhoto={jest.fn()} />);
 
-      expect(wrapper.find('CaptionContainer').length).toBe(1);
-      expect(wrapper.find('.current-photo').length).toBe(1);
+      expect(wrapper.find('Navigation').length).toBe(2);
+      expect(wrapper.find('Photo').length).toBe(1);
     });
   });
 });

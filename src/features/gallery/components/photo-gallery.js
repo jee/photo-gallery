@@ -1,6 +1,8 @@
 // @flow
 import React from 'react';
-import CaptionContainer from '../containers/caption-container';
+import Navigation from './navigation';
+import Photo from './photo';
+import '../styles/photo-gallery.css';
 
 type PhotoGalleryProps = {
   photos: any,
@@ -16,14 +18,17 @@ const PhotoGallery = ({
   navBackPhoto
 }: PhotoGalleryProps) => {
   return (
-    <div>
-      <CaptionContainer caption={photos[index].description} />
-      <div className="current-photo">
-        <img src={photos[index].urls.regular} />
-      </div>
-      <div>
-        <h1 onClick={navNextPhoto}>NEXT</h1>
-        <h1 onClick={navBackPhoto}>BACK</h1>
+    <div className="PhotoGallery container-fluid">
+      <div className="row photo-box">
+        <nav className="col-lg-1">
+          <Navigation chevron={'left'} onButtonClick={navBackPhoto} />
+        </nav>
+        <article className="col-lg-10">
+          <Photo index={index} photos={photos} />
+        </article>
+        <nav className="col-lg-1">
+          <Navigation chevron={'right'} onButtonClick={navNextPhoto} />
+        </nav>
       </div>
     </div>
   );
