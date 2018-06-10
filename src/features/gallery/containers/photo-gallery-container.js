@@ -36,7 +36,7 @@ export class PhotoGalleryContainer extends React.Component<
   }
 
   navNextPhoto = () => {
-    if (this.state.index + 1 < this.state.maxIndex) {
+    if (this.state.index + 1 <= this.state.maxIndex) {
       this.setState({
         index: this.state.index + 1
       });
@@ -58,6 +58,7 @@ export class PhotoGalleryContainer extends React.Component<
           <PhotoGallery
             photos={this.state.photos}
             index={this.state.index}
+            maxIndex={this.state.maxIndex}
             navNextPhoto={this.navNextPhoto}
             navBackPhoto={this.navBackPhoto}
           />
