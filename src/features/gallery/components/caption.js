@@ -10,11 +10,11 @@ type CaptionProps = {
 const Caption = ({ caption, source }: CaptionProps) => {
   return (
     <div className="Caption figure">
-      <div className="figure-caption figure-caption-custom">
-        <p className="image-caption">{caption}</p>
+      <div className="figure-caption custom">
+        <p className="caption-text my-auto">{caption}</p>
         <small className="text-muted image-source">
           <a href={source} target="_blank" rel="noopener noreferrer">
-            &nbsp;source
+            source
           </a>
         </small>
       </div>
