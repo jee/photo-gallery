@@ -8,7 +8,8 @@ type PhotoGalleryContainerProps = {
 
 type PhotoGalleryContainerState = {
   photos: Array<mixed>,
-  index: number
+  index: number,
+  maxIndex: number
 };
 
 export class PhotoGalleryContainer extends React.Component<
@@ -20,6 +21,7 @@ export class PhotoGalleryContainer extends React.Component<
 
     this.state = {
       index: 0,
+      maxIndex: 0,
       photos: []
     };
   }
@@ -27,21 +29,26 @@ export class PhotoGalleryContainer extends React.Component<
   componentDidMount() {
     if (this.props.photos && this.props.photos.results) {
       this.setState({
-        photos: this.props.photos.results
+        photos: this.props.photos.results,
+        maxIndex: this.props.photos.results.length - 1
       });
     }
   }
 
   navNextPhoto = () => {
-    this.setState({
-      index: this.state.index + 1
-    });
+    if (this.state.index + 1 < this.state.maxIndex) {
+      this.setState({
+        index: this.state.index + 1
+      });
+    }
   };
 
   navBackPhoto = () => {
-    this.setState({
-      index: this.state.index - 1
-    });
+    if (this.state.index - 1 > -1) {
+      this.setState({
+        index: this.state.index - 1
+      });
+    }
   };
 
   render() {

@@ -42,7 +42,7 @@ describe('PhotoGalleryContainer', () => {
   describe('should initialize state', () => {
     it('when the root component is loaded', () => {
       const wrapper = shallow(<PhotoGalleryContainer photos={mockPhotoData} />);
-      expect(Object.keys(wrapper.state()).sort()).toEqual(['index', 'photos']);
+      expect(Object.keys(wrapper.state()).sort()).toEqual(['index', 'maxIndex', 'photos']);
     });
   });
 
