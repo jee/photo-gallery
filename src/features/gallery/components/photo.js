@@ -17,7 +17,7 @@ const Photo = ({ index, photos }: PhotoProps) => {
             className="img-fluid mx-auto d-block"
             alt={photos[index].description}
           />
-          <Caption caption={photos[index].description} />
+          <Caption caption={photos[index].description} source={photos[index].urls.full} />
         </figure>
       </div>
     </div>
