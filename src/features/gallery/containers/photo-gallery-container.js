@@ -11,7 +11,10 @@ type PhotoGalleryContainerState = {
   index: number
 };
 
-class PhotoGalleryContainer extends React.Component<PhotoGalleryContainerProps, PhotoGalleryContainerState> {
+export class PhotoGalleryContainer extends React.Component<
+  PhotoGalleryContainerProps,
+  PhotoGalleryContainerState
+> {
   constructor(props: PhotoGalleryContainerProps) {
     super(props);
 
@@ -56,5 +59,3 @@ class PhotoGalleryContainer extends React.Component<PhotoGalleryContainerProps, 
     );
   }
 }
-
-export default PhotoGalleryContainer;

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PhotoGalleryContainer from 'photo-gallery/src/features/gallery/containers/photo-gallery-container';
+import {PhotoGalleryContainer} from 'photo-gallery/src/features/gallery/containers/photo-gallery-container';
 import { shallow } from 'enzyme';
 
 describe('PhotoGalleryContainer', () => {
