@@ -18,17 +18,13 @@ const PhotoGallery = ({
   navBackPhoto
 }: PhotoGalleryProps) => {
   return (
-    <div className="PhotoGallery container-fluid">
+    <div className="PhotoGallery container-fluid shade">
       <div className="row photo-box">
-        <nav className="col-lg-1">
+        <div className="col-12">
           <Navigation chevron={'left'} onButtonClick={navBackPhoto} />
-        </nav>
-        <article className="col-lg-10">
           <Photo index={index} photos={photos} />
-        </article>
-        <nav className="col-lg-1">
           <Navigation chevron={'right'} onButtonClick={navNextPhoto} />
-        </nav>
+        </div>
       </div>
     </div>
   );
