@@ -8,12 +8,12 @@ describe('Caption', () => {
     it('when the root component is loaded', () => {
       const wrapper = shallow(<Caption caption={'Testing'} />);
 
-      expect(wrapper.find('.photo-caption').length).toBe(1);
+      expect(wrapper.find('.figure-caption').length).toBe(1);
     });
 
     it('with caption text when the caption prop is passed in', () => {
       const wrapper = shallow(<Caption caption={'This is a caption!'} />);
-      const text = wrapper.find('.photo-caption').text();
+      const text = wrapper.find('.Caption').text();
       expect(text).toEqual('This is a caption!');
     });
   });

@@ -1,5 +1,6 @@
 // @flow
 import React from 'react';
+import '../styles/caption.css';
 
 type CaptionProps = {
   caption: string
@@ -7,8 +8,8 @@ type CaptionProps = {
 
 const Caption = ({caption}: CaptionProps) => {
   return (
-    <div className="photo-caption">
-      <p>{caption}</p>
+    <div className="Caption figure">
+      <p className="figure-caption">{caption}</p>
     </div>
   );
 };
