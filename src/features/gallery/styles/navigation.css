@@ -3,16 +3,23 @@
   cursor: pointer;
 }
 
-.overlay-left {
+.chevron-overlay {
   position: absolute;
-  left: 15px;
-  top: 45%;
+  top: 40%;
+  text-shadow: 2px 2px #0e0e0e;
   z-index: 2;
 }
 
-.overlay-right {
-  position: absolute;
+.chevron-overlay-left {
+  left: 15px;
+}
+
+.chevron-overlay-right {
   right: 15px;
-  top: 45%;
-  z-index: 2;
+}
+
+@media screen and (orientation: landscape) {
+  .chevron-overlay {
+    top: 50%;
+  }
 }

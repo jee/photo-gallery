@@ -7,9 +7,12 @@ type NavigationProps = {
   onButtonClick: () => void
 };
 
-const Navigation = ({chevron, onButtonClick}: NavigationProps) => {
+const Navigation = ({ chevron, onButtonClick }: NavigationProps) => {
   return (
-    <div className={`Navigation float-${chevron} overlay-${chevron}`} onClick={onButtonClick}>
+    <div
+      className={`Navigation float-${chevron} chevron-overlay chevron-overlay-${chevron}`}
+      onClick={onButtonClick}
+    >
       <i className={`fas fa-chevron-${chevron} fa-3x`} />
     </div>
   );
