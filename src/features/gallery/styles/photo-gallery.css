@@ -1,11 +1,18 @@
 .PhotoGallery {
   color: whitesmoke;
-  background: #0E0E0E;
-  height: 100vh;
-  overflow-x: hidden;
+  background: #0e0e0e;
 }
 
-.photo-box {
-  align-items: center;
-  height: 100vh;
+.row.counter {
+  min-height: 10rem;
+}
+
+.row.photo {
+  min-height: calc(100vh - 10rem);
+}
+
+@media screen and (orientation: landscape) {
+  .row.counter {
+    min-height: 2rem;
+  }
 }
