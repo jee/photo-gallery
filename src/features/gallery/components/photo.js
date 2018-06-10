@@ -12,10 +12,10 @@ const Photo = ({ index, photos }: PhotoProps) => {
   return (
     <div className="Photo container-fluid">
       <div className="row photo-box">
-        <figure className="col-lg-12">
+        <figure className="col">
           <img
             src={photos[index].urls.full}
-            className="img-fluid mx-auto d-block"
+            className="img-fluid custom"
             alt={photos[index].description}
           />
           <Caption caption={photos[index].description} source={photos[index].urls.full} />
