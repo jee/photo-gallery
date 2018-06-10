@@ -1,4 +1,3 @@
-// @flow
 import React from 'react';
 import ReactDOM from 'react-dom';
 import PhotoGalleryContainer from 'photo-gallery/src/features/gallery/containers/photo-gallery-container';

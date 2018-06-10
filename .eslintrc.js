@@ -4,7 +4,11 @@ module.exports = {
         "es6": true,
         "jest": true
     },
-    "extends": ["plugin:flowtype/recommended"],
+    "parser": "babel-eslint",
+    "extends": [
+      "plugin:flowtype/recommended",
+      "plugin:react/recommended"
+    ],
     "parserOptions": {
         "ecmaFeatures": {
             "experimentalObjectRestSpread": true,
