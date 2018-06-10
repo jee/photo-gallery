@@ -1,0 +1,7 @@
+.Photo {
+}
+
+.img-fluid {
+  max-width: auto;
+  max-height: 100vh;
+}

@@ -1,6 +1,7 @@
 // @flow
 import React from 'react';
 import Caption from './caption';
+import '../styles/photo.css';
 
 type PhotoProps = {
   index: number,
