@@ -2,11 +2,15 @@
   /* No styles for now */
 }
 
-.figure-caption {
+.figure-caption-custom {
   position: absolute;
-  top: 90%;
+  top: 88%;
   left: 3%;
   background: rgba(0, 0, 0, 0.5);
   padding: 10px;
   color: whitesmoke;
+}
+
+.image-caption {
+  display: inline-block;
 }
