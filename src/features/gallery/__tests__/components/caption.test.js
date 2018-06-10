@@ -13,7 +13,7 @@ describe('Caption', () => {
 
     it('with caption text when the caption prop is passed in', () => {
       const wrapper = shallow(<Caption caption={'This is a caption!'} source={'http://via.placeholder.com/350x150'} />);
-      const text = wrapper.find('.image-caption').text();
+      const text = wrapper.find('.caption-text').text();
       expect(text).toEqual('This is a caption!');
     });
 
