@@ -1,32 +1,17 @@
 // @flow
 import React from 'react';
 import './App.css';
+import PhotoGalleryContainer from './gallery/containers/photo-gallery-container';
 import {MOCK_DATA} from '../utils/mock-api-data';
 
-type AppProps = {};
-
-type AppState = {
-  photos: Array<mixed>
-}
-
-class App extends React.Component<AppProps, AppState> {
-  constructor(props: AppProps) {
-    super(props);
-
-    this.state = {
-      photos: []
-    };
-  }
-
-  componentDidMount() {
-    this.setState({
-      photos: MOCK_DATA.results
-    });
-  }
-
+class App extends React.Component<*> {
   render() {
     return (
-      <h1>{'Entry point'}</h1>
+      <div>
+        <PhotoGalleryContainer
+          photos={MOCK_DATA}
+        />
+      </div>
     );
   }
 }
