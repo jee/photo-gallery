@@ -3,6 +3,7 @@ import React from 'react';
 import Navigation from './navigation';
 import Photo from './photo';
 import PhotoCounter from './photo-counter';
+import ReactSwipe from 'react-swipe';
 import '../styles/photo-gallery.css';
 
 type PhotoGalleryProps = {
@@ -10,7 +11,9 @@ type PhotoGalleryProps = {
   index: number,
   maxIndex: number,
   navNextPhoto: () => void,
-  navBackPhoto: () => void
+  navBackPhoto: () => void,
+  isMobile: boolean,
+  swipeOptions: Object
 };
 
 const PhotoGallery = ({
@@ -18,7 +21,9 @@ const PhotoGallery = ({
   index,
   maxIndex,
   navNextPhoto,
-  navBackPhoto
+  navBackPhoto,
+  isMobile,
+  swipeOptions
 }: PhotoGalleryProps) => {
   return (
     <div className="PhotoGallery">
@@ -29,9 +34,23 @@ const PhotoGallery = ({
           </div>
         </div>
         <div className="row photo align-items-start">
-          <Navigation chevron={'left'} onButtonClick={navBackPhoto} />
-          <Photo index={index} photos={photos} />
-          <Navigation chevron={'right'} onButtonClick={navNextPhoto} />
+          {isMobile ? (
+            <ReactSwipe className="carousel" swipeOptions={swipeOptions}>
+              {photos.map(photo => {
+                return (
+                  <div key={photo.id}>
+                    <Photo singlePhoto={photo} />
+                  </div>
+                );
+              })}
+            </ReactSwipe>
+          ) : (
+            <div>
+              <Navigation chevron={'left'} onButtonClick={navBackPhoto} />
+              <Photo index={index} multiPhoto={photos} />
+              <Navigation chevron={'right'} onButtonClick={navNextPhoto} />
+            </div>
+          )}
         </div>
       </div>
     </div>
