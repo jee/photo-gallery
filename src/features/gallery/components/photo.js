@@ -3,25 +3,31 @@ import React from 'react';
 import Caption from './caption';
 
 type PhotoProps = {
-  index: number,
-  photos: any
+  index?: number,
+  multiPhoto?: Object,
+  singlePhoto?: Object
 };
 
-const Photo = ({ index, photos }: PhotoProps) => {
-  return (
+const Photo = ({ index, multiPhoto, singlePhoto }: PhotoProps) => {
+  const currentPhoto = multiPhoto ? multiPhoto[index] : singlePhoto;
+
+  return currentPhoto ? (
     <div className="Photo container-fluid">
       <div className="row">
         <figure className="col">
           <img
-            src={photos[index].urls.full}
+            src={currentPhoto.urls.full}
             className="img-fluid"
-            alt={photos[index].description}
+            alt={currentPhoto.description}
           />
-          <Caption caption={photos[index].description} source={photos[index].urls.full} />
+          <Caption
+            caption={currentPhoto.description}
+            source={currentPhoto.urls.full}
+          />
         </figure>
       </div>
     </div>
-  );
+  ) : null;
 };
 
 export default Photo;
