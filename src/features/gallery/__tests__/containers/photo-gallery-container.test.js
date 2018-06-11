@@ -89,7 +89,8 @@ describe('PhotoGalleryContainer', () => {
       expect(Object.keys(wrapper.state()).sort()).toEqual([
         'index',
         'maxIndex',
-        'photos'
+        'photos',
+        'width'
       ]);
     });
   });
@@ -123,6 +124,37 @@ describe('PhotoGalleryContainer', () => {
       inst.navBackPhoto();
 
       expect(spy).toHaveBeenCalledTimes(3);
+    });
+
+    it('when handleWindowSizeChange is triggered', () => {
+      const wrapper = shallow(<PhotoGalleryContainer photos={mockPhotoData} />);
+
+      const inst = wrapper.instance();
+      const spy = jest.spyOn(inst, 'handleWindowSizeChange');
+
+      inst.handleWindowSizeChange();
+      expect(spy).toHaveBeenCalledTimes(1);
+
+      inst.handleWindowSizeChange();
+      inst.handleWindowSizeChange();
+
+      expect(spy).toHaveBeenCalledTimes(3);
+    });
+
+    it('when the ReactSwipe swipeOptions callback is triggered', () => {
+      const wrapper = shallow(<PhotoGalleryContainer photos={mockPhotoData} />);
+
+      const inst = wrapper.instance();
+      const navNextSpy = jest.spyOn(inst, 'navNextPhoto');
+      const navBackSpy = jest.spyOn(inst, 'navBackPhoto');
+
+      wrapper.children().props().swipeOptions.callback(1);
+      expect(navNextSpy).toHaveBeenCalledTimes(1);
+      expect(navBackSpy).toHaveBeenCalledTimes(0);
+
+      wrapper.children().props().swipeOptions.callback(0);
+      expect(navNextSpy).toHaveBeenCalledTimes(1);
+      expect(navBackSpy).toHaveBeenCalledTimes(1);
     });
   });
 
@@ -167,6 +199,39 @@ describe('PhotoGalleryContainer', () => {
 
       inst.navBackPhoto();
       expect(wrapper.state().index).toBe(0);
+    });
+  });
+
+  describe('should properly calculate isMobile', () => {
+    it('when window size is less than or equal to 500px', () => {
+      const wrapper = shallow(<PhotoGalleryContainer photos={mockPhotoData} />);
+      const inst = wrapper.instance();
+
+      inst.handleWindowSizeChange();
+      expect(wrapper.state().width).toBeGreaterThanOrEqual(500);
+      expect(wrapper.children().props().isMobile).toBe(false);
+
+      global.innerWidth = 450;
+      global.dispatchEvent(new Event('resize'));
+      inst.handleWindowSizeChange();
+
+      expect(wrapper.state().width).toBeLessThanOrEqual(500);
+      wrapper.update();
+
+      expect(wrapper.children().props().isMobile).toBe(true);
+    });
+
+    it('when window size is greater than or equal to 500px', () => {
+      const wrapper = shallow(<PhotoGalleryContainer photos={mockPhotoData} />);
+      const inst = wrapper.instance();
+
+      global.innerWidth = 1024;
+      global.dispatchEvent(new Event('resize'));
+      inst.handleWindowSizeChange();
+      wrapper.update();
+
+      expect(wrapper.state().width).toBeGreaterThanOrEqual(500);
+      expect(wrapper.children().props().isMobile).toBe(false);
     });
   });
 });
