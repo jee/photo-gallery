@@ -9,7 +9,8 @@ type PhotoGalleryContainerProps = {
 type PhotoGalleryContainerState = {
   photos: Array<mixed>,
   index: number,
-  maxIndex: number
+  maxIndex: number,
+  width: number
 };
 
 export class PhotoGalleryContainer extends React.Component<
@@ -22,8 +23,17 @@ export class PhotoGalleryContainer extends React.Component<
     this.state = {
       index: 0,
       maxIndex: 0,
-      photos: []
+      photos: [],
+      width: window.innerWidth
     };
+  }
+
+  UNSAFE_componentWillMount() {
+    window.addEventListener('resize', this.handleWindowSizeChange);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleWindowSizeChange);
   }
 
   componentDidMount() {
@@ -34,6 +44,10 @@ export class PhotoGalleryContainer extends React.Component<
       });
     }
   }
+
+  handleWindowSizeChange = () => {
+    this.setState({ width: window.innerWidth });
+  };
 
   navNextPhoto = () => {
     if (this.state.index + 1 <= this.state.maxIndex) {
@@ -52,6 +66,19 @@ export class PhotoGalleryContainer extends React.Component<
   };
 
   render() {
+    const { width } = this.state;
+    const isMobile = width <= 500;
+    const swipeOptions = {
+      callback: swipeIndex => {
+        if (swipeIndex > this.state.index) {
+          this.navNextPhoto();
+        } else {
+          this.navBackPhoto();
+        }
+      },
+      continuous: false
+    };
+
     return (
       <div>
         {this.state.photos.length > 0 ? (
@@ -61,6 +88,8 @@ export class PhotoGalleryContainer extends React.Component<
             maxIndex={this.state.maxIndex}
             navNextPhoto={this.navNextPhoto}
             navBackPhoto={this.navBackPhoto}
+            isMobile={isMobile}
+            swipeOptions={swipeOptions}
           />
         ) : null}
       </div>
