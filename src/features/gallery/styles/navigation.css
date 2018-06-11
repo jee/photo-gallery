@@ -5,7 +5,7 @@
 
 .chevron-overlay {
   position: absolute;
-  top: 50%;
+  top: 45%;
   text-shadow: 2px 2px #0e0e0e;
   z-index: 2;
 }
