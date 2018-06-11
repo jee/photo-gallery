@@ -15,4 +15,8 @@
   .row.counter {
     min-height: 2rem;
   }
+
+  .row.photo {
+    min-height: calc(100vh - 2rem);
+  }
 }
