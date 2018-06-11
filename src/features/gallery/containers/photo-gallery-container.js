@@ -28,21 +28,19 @@ export class PhotoGalleryContainer extends React.Component<
     };
   }
 
-  UNSAFE_componentWillMount() {
-    window.addEventListener('resize', this.handleWindowSizeChange);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.handleWindowSizeChange);
-  }
-
   componentDidMount() {
+    window.addEventListener('resize', this.handleWindowSizeChange);
+
     if (this.props.photos && this.props.photos.results) {
       this.setState({
         photos: this.props.photos.results,
         maxIndex: this.props.photos.results.length - 1
       });
     }
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleWindowSizeChange);
   }
 
   handleWindowSizeChange = () => {
@@ -66,9 +64,10 @@ export class PhotoGalleryContainer extends React.Component<
   };
 
   render() {
-    const { width } = this.state;
+    const width = this.state.width;
     const isMobile = width <= 500;
     const swipeOptions = {
+      startSlide: this.state.index,
       callback: swipeIndex => {
         if (swipeIndex > this.state.index) {
           this.navNextPhoto();
