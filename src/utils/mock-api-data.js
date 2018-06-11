@@ -14,6 +14,153 @@ export const MOCK_DATA = {
   total_pages: 3,
   results: [
     {
+      id: 'SHP1t8EduMY',
+      created_at: '2015-12-14T22:22:32-05:00',
+      updated_at: '2018-05-18T13:03:09-04:00',
+      width: 5332,
+      height: 3725,
+      color: '#FFF1D0',
+      description:
+        'A purple and yellow sunset behind Golden Gate Bridge in San Fransisco, with waves breaking on the shoreline.',
+      urls: {
+        raw:
+          'https://images.unsplash.com/photo-1450149632596-3ef25a62011a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=382de4ba1971319e4f2e75292438696d',
+        full:
+          'https://images.unsplash.com/photo-1450149632596-3ef25a62011a?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=24022c2a571cad43bbcca00a00aa3331',
+        regular:
+          'https://images.unsplash.com/photo-1450149632596-3ef25a62011a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=489cbb0e06ef9a5dc00c1443fcb1e3b9',
+        small:
+          'https://images.unsplash.com/photo-1450149632596-3ef25a62011a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=72b57eaf4aec61f963995090712f05c4',
+        thumb:
+          'https://images.unsplash.com/photo-1450149632596-3ef25a62011a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=4adc99b3918027ff9352045ee413f3f3'
+      },
+      links: {
+        self: 'https://api.unsplash.com/photos/SHP1t8EduMY',
+        html: 'https://unsplash.com/photos/SHP1t8EduMY',
+        download: 'https://unsplash.com/photos/SHP1t8EduMY/download',
+        download_location:
+          'https://api.unsplash.com/photos/SHP1t8EduMY/download'
+      },
+      categories: [],
+      sponsored: false,
+      likes: 343,
+      liked_by_user: false,
+      current_user_collections: [],
+      slug: null,
+      user: {
+        id: 'JpswY8j7ZqA',
+        updated_at: '2018-05-03T14:00:55-04:00',
+        username: 'sayyam197',
+        name: 'Umer Sayyam',
+        first_name: 'Umer',
+        last_name: 'Sayyam',
+        twitter_username: 'usayyam',
+        portfolio_url: null,
+        bio: null,
+        location: null,
+        links: {
+          self: 'https://api.unsplash.com/users/sayyam197',
+          html: 'https://unsplash.com/@sayyam197',
+          photos: 'https://api.unsplash.com/users/sayyam197/photos',
+          likes: 'https://api.unsplash.com/users/sayyam197/likes',
+          portfolio: 'https://api.unsplash.com/users/sayyam197/portfolio',
+          following: 'https://api.unsplash.com/users/sayyam197/following',
+          followers: 'https://api.unsplash.com/users/sayyam197/followers'
+        },
+        profile_image: {
+          small:
+            'https://images.unsplash.com/placeholder-avatars/extra-large.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=32&w=32&s=0ad68f44c4725d5a3fda019bab9d3edc',
+          medium:
+            'https://images.unsplash.com/placeholder-avatars/extra-large.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64&s=356bd4b76a3d4eb97d63f45b818dd358',
+          large:
+            'https://images.unsplash.com/placeholder-avatars/extra-large.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128&s=ee8bbf5fb8d6e43aaaa238feae2fe90d'
+        },
+        instagram_username: 'usayyam',
+        total_collections: 0,
+        total_likes: 2,
+        total_photos: 2
+      },
+      tags: [
+        {
+          title: 'sunset'
+        },
+        {
+          title: 'golden gate bridge'
+        },
+        {
+          title: 'pink'
+        },
+        {
+          title: 'background'
+        },
+        {
+          title: 'bridge'
+        },
+        {
+          title: 'bay'
+        },
+        {
+          title: 'shore'
+        },
+        {
+          title: 'water'
+        },
+        {
+          title: 'ocean'
+        },
+        {
+          title: 'sunrise'
+        },
+        {
+          title: 'architecture'
+        },
+        {
+          title: 'san francisco'
+        },
+        {
+          title: 'ocean shore'
+        },
+        {
+          title: 'san fransisco'
+        },
+        {
+          title: 'mt. tamalpai'
+        },
+        {
+          title: 'outside'
+        },
+        {
+          title: 'waterfront'
+        },
+        {
+          title: 'marin'
+        },
+        {
+          title: 'bay area'
+        },
+        {
+          title: 'rock'
+        }
+      ],
+      photo_tags: [
+        {
+          title: 'sunset'
+        },
+        {
+          title: 'golden gate bridge'
+        },
+        {
+          title: 'pink'
+        },
+        {
+          title: 'background'
+        },
+        {
+          title: 'bridge'
+        }
+      ]
+    },
+    {
       id: '_v5kxvrRFo4',
       created_at: '2017-01-17T16:53:02-05:00',
       updated_at: '2018-05-18T13:12:50-04:00',
@@ -162,132 +309,105 @@ export const MOCK_DATA = {
       ]
     },
     {
-      id: '9M54sNTIa-4',
-      created_at: '2016-12-17T11:28:47-05:00',
-      updated_at: '2018-05-18T13:11:26-04:00',
-      width: 4623,
-      height: 2942,
-      color: '#F9F7F4',
+      id: 'Wt4iFl3OE4Q',
+      created_at: '2015-08-10T07:02:14-04:00',
+      updated_at: '2018-05-18T13:00:23-04:00',
+      width: 4491,
+      height: 2994,
+      color: '#6987A7',
       description:
-        'Drone view of San Francisco Golden Gate Bridge over crystal blue water and harbor in background',
+        'Tall violet flower head with the Golden Gate Bridge in the blurry background',
       urls: {
         raw:
-          'https://images.unsplash.com/photo-1481991990414-7802ae5de1e0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=910c89230ede097bb7d56b1e0a6bd7c3',
+          'https://images.unsplash.com/photo-1439204426458-9e854ec0d024?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=f8cdbfe7591ea51c5fe3bffe8f28787a',
         full:
-          'https://images.unsplash.com/photo-1481991990414-7802ae5de1e0?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=38867bda0b566fd0c55929d437ab6b68',
+          'https://images.unsplash.com/photo-1439204426458-9e854ec0d024?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=07a7675ebe9cc48780d13d6cf72fcd05',
         regular:
-          'https://images.unsplash.com/photo-1481991990414-7802ae5de1e0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=a7102625da9b851f65789f01148954fc',
+          'https://images.unsplash.com/photo-1439204426458-9e854ec0d024?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=0eec2f01a5ae7335c9fa58db47879dcd',
         small:
-          'https://images.unsplash.com/photo-1481991990414-7802ae5de1e0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=81c060029eddf0e571e472b8c83df252',
+          'https://images.unsplash.com/photo-1439204426458-9e854ec0d024?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=7567566b6d7712ee9737d159498774e0',
         thumb:
-          'https://images.unsplash.com/photo-1481991990414-7802ae5de1e0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=6e14879ac52abe51e98acb797fb15de2'
+          'https://images.unsplash.com/photo-1439204426458-9e854ec0d024?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=bdea9dfce025d95d79bf1e9851e5ef8b'
       },
       links: {
-        self: 'https://api.unsplash.com/photos/9M54sNTIa-4',
-        html: 'https://unsplash.com/photos/9M54sNTIa-4',
-        download: 'https://unsplash.com/photos/9M54sNTIa-4/download',
+        self: 'https://api.unsplash.com/photos/Wt4iFl3OE4Q',
+        html: 'https://unsplash.com/photos/Wt4iFl3OE4Q',
+        download: 'https://unsplash.com/photos/Wt4iFl3OE4Q/download',
         download_location:
-          'https://api.unsplash.com/photos/9M54sNTIa-4/download'
+          'https://api.unsplash.com/photos/Wt4iFl3OE4Q/download'
       },
       categories: [],
       sponsored: false,
-      likes: 214,
+      likes: 20,
       liked_by_user: false,
       current_user_collections: [],
       slug: null,
       user: {
-        id: 'YHHuVN_m2Pc',
-        updated_at: '2018-06-09T15:17:46-04:00',
-        username: 'cleipelt',
-        name: 'Chris Leipelt',
-        first_name: 'Chris',
-        last_name: 'Leipelt',
+        id: 'ZBYek-H4g3U',
+        updated_at: '2018-05-03T14:01:43-04:00',
+        username: 'davide_zemiti',
+        name: 'Davide Zemiti',
+        first_name: 'Davide',
+        last_name: 'Zemiti',
         twitter_username: null,
-        portfolio_url: 'http://www.chrisleipelt.photos',
-        bio: 'Go out and explore.',
-        location: 'San Jose, California',
+        portfolio_url: 'http://twitter.com/zemo84',
+        bio: null,
+        location: 'Paullo, Milano',
         links: {
-          self: 'https://api.unsplash.com/users/cleipelt',
-          html: 'https://unsplash.com/@cleipelt',
-          photos: 'https://api.unsplash.com/users/cleipelt/photos',
-          likes: 'https://api.unsplash.com/users/cleipelt/likes',
-          portfolio: 'https://api.unsplash.com/users/cleipelt/portfolio',
-          following: 'https://api.unsplash.com/users/cleipelt/following',
-          followers: 'https://api.unsplash.com/users/cleipelt/followers'
+          self: 'https://api.unsplash.com/users/davide_zemiti',
+          html: 'https://unsplash.com/@davide_zemiti',
+          photos: 'https://api.unsplash.com/users/davide_zemiti/photos',
+          likes: 'https://api.unsplash.com/users/davide_zemiti/likes',
+          portfolio: 'https://api.unsplash.com/users/davide_zemiti/portfolio',
+          following: 'https://api.unsplash.com/users/davide_zemiti/following',
+          followers: 'https://api.unsplash.com/users/davide_zemiti/followers'
         },
         profile_image: {
           small:
-            'https://images.unsplash.com/profile-1521750382085-e1ba1bac1318?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=32&w=32&s=17914910e8f937a6eba1ccdbce2da964',
+            'https://images.unsplash.com/profile-1443104160329-2d37a4ad4653?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=32&w=32&s=c0ee58657c6c4a6c17f78665c7b1eebb',
           medium:
-            'https://images.unsplash.com/profile-1521750382085-e1ba1bac1318?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64&s=17bf32ca9d48816200bb21458b2a9390',
+            'https://images.unsplash.com/profile-1443104160329-2d37a4ad4653?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64&s=5dce793bdaa4b706d85a3e8b445e7e5c',
           large:
-            'https://images.unsplash.com/profile-1521750382085-e1ba1bac1318?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128&s=77abb7492ac439fb386f07ceec080234'
+            'https://images.unsplash.com/profile-1443104160329-2d37a4ad4653?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128&s=3849963d7b7001315d5c0426f5934137'
         },
-        instagram_username: 'chrisleipelt.photos',
+        instagram_username: 'davide_zemiti',
         total_collections: 0,
-        total_likes: 17,
-        total_photos: 39
+        total_likes: 0,
+        total_photos: 16
       },
       tags: [
         {
           title: 'bridge'
         },
         {
-          title: 'suspension bridge'
+          title: 'flower'
         },
         {
-          title: 'structure'
-        },
-        {
-          title: 'goldengate'
-        },
-        {
-          title: 'aerial view'
-        },
-        {
-          title: 'river'
-        },
-        {
-          title: 'transportation'
-        },
-        {
-          title: 'drone view'
+          title: 'golden gate bridge'
         },
         {
           title: 'san francisco'
         },
         {
-          title: 'cable'
+          title: 'landscape'
         },
         {
-          title: 'golden'
+          title: 'californium'
         },
         {
-          title: 'gate'
+          title: 'foxglove'
         },
         {
-          title: 'landmark'
+          title: 'usa'
         },
         {
-          title: 'water'
+          title: 'san fransico'
         },
         {
-          title: 'city'
+          title: 'nature'
         },
         {
-          title: 'car'
-        },
-        {
-          title: 'coast'
-        },
-        {
-          title: 'bay'
-        },
-        {
-          title: 'architecture'
-        },
-        {
-          title: 'breakwater'
+          title: 'golden gate'
         }
       ],
       photo_tags: [
@@ -295,16 +415,16 @@ export const MOCK_DATA = {
           title: 'bridge'
         },
         {
-          title: 'suspension bridge'
+          title: 'flower'
         },
         {
-          title: 'structure'
+          title: 'golden gate bridge'
         },
         {
-          title: 'goldengate'
+          title: 'san francisco'
         },
         {
-          title: 'aerial view'
+          title: 'landscape'
         }
       ]
     },
@@ -746,148 +866,127 @@ export const MOCK_DATA = {
       ]
     },
     {
-      id: 'rv3gQRwGFHE',
-      created_at: '2014-08-05T09:24:43-04:00',
-      updated_at: '2018-05-18T12:57:36-04:00',
-      width: 3979,
-      height: 2451,
-      color: '#8F857A',
-      description: 'View of Golden Gate Bridge from the bushes',
+      id: 'WE7nMfgqG78',
+      created_at: '2015-02-04T11:52:13-05:00',
+      updated_at: '2018-05-18T12:58:39-04:00',
+      width: 5184,
+      height: 3456,
+      color: '#E5E5E5',
+      description: 'Monochromatic Golden Gate Bridge in Fog',
       urls: {
         raw:
-          'https://images.unsplash.com/reserve/rtOiVoduRDe3Ksidwx0Z_photo03.jpg?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=ad634ef3fc33fcbe843f62a1e2437517',
+          'https://images.unsplash.com/photo-1423068728938-d506c096081e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=846866347fd8e6ff761cc80af66b66f2',
         full:
-          'https://images.unsplash.com/reserve/rtOiVoduRDe3Ksidwx0Z_photo03.jpg?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=ee450c9d68e6498bb20d3602bc4acf04',
+          'https://images.unsplash.com/photo-1423068728938-d506c096081e?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=7894e61df5e4324302ad3e27fab17517',
         regular:
-          'https://images.unsplash.com/reserve/rtOiVoduRDe3Ksidwx0Z_photo03.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=30b925017b3d3c29f0a1492ba6e649c0',
+          'https://images.unsplash.com/photo-1423068728938-d506c096081e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=fd6bf588e87d45b0b2dc18ada4f4f314',
         small:
-          'https://images.unsplash.com/reserve/rtOiVoduRDe3Ksidwx0Z_photo03.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=a411e8a55a5f907e69689da94a9af038',
+          'https://images.unsplash.com/photo-1423068728938-d506c096081e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=453d8a49fc015aacc9248fca351c8dd8',
         thumb:
-          'https://images.unsplash.com/reserve/rtOiVoduRDe3Ksidwx0Z_photo03.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=9fe0dff1d5596f77476584fa0d1dfba5'
+          'https://images.unsplash.com/photo-1423068728938-d506c096081e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=416c029c92fb81e593d8a2466cd4f164'
       },
       links: {
-        self: 'https://api.unsplash.com/photos/rv3gQRwGFHE',
-        html: 'https://unsplash.com/photos/rv3gQRwGFHE',
-        download: 'https://unsplash.com/photos/rv3gQRwGFHE/download',
+        self: 'https://api.unsplash.com/photos/WE7nMfgqG78',
+        html: 'https://unsplash.com/photos/WE7nMfgqG78',
+        download: 'https://unsplash.com/photos/WE7nMfgqG78/download',
         download_location:
-          'https://api.unsplash.com/photos/rv3gQRwGFHE/download'
+          'https://api.unsplash.com/photos/WE7nMfgqG78/download'
       },
       categories: [],
       sponsored: false,
-      likes: 22,
+      likes: 184,
       liked_by_user: false,
       current_user_collections: [],
       slug: null,
       user: {
-        id: 'f62BjSwBDOo',
-        updated_at: '2018-05-03T14:00:48-04:00',
-        username: 'gaetanpautler',
-        name: 'Gaetan Pautler',
-        first_name: 'Gaetan',
-        last_name: 'Pautler',
+        id: '7wEOY2J4MQU',
+        updated_at: '2018-05-15T14:57:01-04:00',
+        username: 'akeenster',
+        name: 'Abigail  Keenan',
+        first_name: 'Abigail ',
+        last_name: 'Keenan',
         twitter_username: null,
-        portfolio_url: 'http://gaetanpautler.com',
+        portfolio_url: 'http://www.abigailkeenan.com',
         bio: null,
         location: null,
         links: {
-          self: 'https://api.unsplash.com/users/gaetanpautler',
-          html: 'https://unsplash.com/@gaetanpautler',
-          photos: 'https://api.unsplash.com/users/gaetanpautler/photos',
-          likes: 'https://api.unsplash.com/users/gaetanpautler/likes',
-          portfolio: 'https://api.unsplash.com/users/gaetanpautler/portfolio',
-          following: 'https://api.unsplash.com/users/gaetanpautler/following',
-          followers: 'https://api.unsplash.com/users/gaetanpautler/followers'
+          self: 'https://api.unsplash.com/users/akeenster',
+          html: 'https://unsplash.com/@akeenster',
+          photos: 'https://api.unsplash.com/users/akeenster/photos',
+          likes: 'https://api.unsplash.com/users/akeenster/likes',
+          portfolio: 'https://api.unsplash.com/users/akeenster/portfolio',
+          following: 'https://api.unsplash.com/users/akeenster/following',
+          followers: 'https://api.unsplash.com/users/akeenster/followers'
         },
         profile_image: {
           small:
-            'https://images.unsplash.com/placeholder-avatars/extra-large.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=32&w=32&s=0ad68f44c4725d5a3fda019bab9d3edc',
+            'https://images.unsplash.com/profile-1446447188532-e405d2474510?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=32&w=32&s=8db4bb53df4d51e9208fb97fe2a1dcb7',
           medium:
-            'https://images.unsplash.com/placeholder-avatars/extra-large.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64&s=356bd4b76a3d4eb97d63f45b818dd358',
+            'https://images.unsplash.com/profile-1446447188532-e405d2474510?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64&s=47c3c754911e857d43e70ba613e90a6e',
           large:
-            'https://images.unsplash.com/placeholder-avatars/extra-large.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128&s=ee8bbf5fb8d6e43aaaa238feae2fe90d'
+            'https://images.unsplash.com/profile-1446447188532-e405d2474510?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128&s=d009c7b7a44fcc2625f2c247776acedb'
         },
         instagram_username: null,
         total_collections: 0,
         total_likes: 0,
-        total_photos: 2
+        total_photos: 89
       },
       tags: [
         {
-          title: 'bridge'
-        },
-        {
           title: 'san francisco'
-        },
-        {
-          title: 'golden gate'
         },
         {
           title: 'golden gate bridge'
         },
         {
+          title: 'bridge'
+        },
+        {
+          title: 'black and white'
+        },
+        {
+          title: 'landmark'
+        },
+        {
+          title: 'fog'
+        },
+        {
           title: 'suspension bridge'
         },
         {
-          title: 'view'
+          title: 'golden gate'
         },
         {
-          title: 'bush'
+          title: 'popular'
         },
         {
-          title: 'cloud'
+          title: 'dense fog'
         },
         {
-          title: 'californium'
+          title: 'traffic'
         },
         {
-          title: 'urban landscape'
+          title: 'car'
         },
         {
-          title: 'pacific'
-        },
-        {
-          title: 'tourism'
-        },
-        {
-          title: 'scenic'
-        },
-        {
-          title: 'water'
-        },
-        {
-          title: 'branch'
-        },
-        {
-          title: 'flower'
-        },
-        {
-          title: 'sand'
-        },
-        {
-          title: 'bay'
-        },
-        {
-          title: 'ocean'
-        },
-        {
-          title: 'trail'
+          title: 'b&w'
         }
       ],
       photo_tags: [
         {
-          title: 'bridge'
-        },
-        {
           title: 'san francisco'
-        },
-        {
-          title: 'golden gate'
         },
         {
           title: 'golden gate bridge'
         },
         {
-          title: 'suspension bridge'
+          title: 'bridge'
+        },
+        {
+          title: 'black and white'
+        },
+        {
+          title: 'landmark'
         }
       ]
     },
@@ -1908,153 +2007,6 @@ export const MOCK_DATA = {
         },
         {
           title: 'red'
-        }
-      ]
-    },
-    {
-      id: '_U_Fzg1ibNY',
-      created_at: '2016-08-03T10:55:49-04:00',
-      updated_at: '2018-05-18T13:08:05-04:00',
-      width: 2500,
-      height: 1667,
-      color: '#090101',
-      description:
-        'Looking up at the architectural details of Golden Gate Bridge',
-      urls: {
-        raw:
-          'https://images.unsplash.com/photo-1470236108104-dc405c748d0f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=def4fcfce9515e30ce912f1ca7eeb410',
-        full:
-          'https://images.unsplash.com/photo-1470236108104-dc405c748d0f?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=3d7f5a71966fe2ae94c76316df710bde',
-        regular:
-          'https://images.unsplash.com/photo-1470236108104-dc405c748d0f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=58704b230ce65ea2881c9889d18a4dd5',
-        small:
-          'https://images.unsplash.com/photo-1470236108104-dc405c748d0f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=b6ac50784d260c0ce629e109aa298d0b',
-        thumb:
-          'https://images.unsplash.com/photo-1470236108104-dc405c748d0f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjI4NjcyfQ&s=e6a74d978f37723a2429ca1f1ae11967'
-      },
-      links: {
-        self: 'https://api.unsplash.com/photos/_U_Fzg1ibNY',
-        html: 'https://unsplash.com/photos/_U_Fzg1ibNY',
-        download: 'https://unsplash.com/photos/_U_Fzg1ibNY/download',
-        download_location:
-          'https://api.unsplash.com/photos/_U_Fzg1ibNY/download'
-      },
-      categories: [],
-      sponsored: false,
-      likes: 180,
-      liked_by_user: false,
-      current_user_collections: [],
-      slug: null,
-      user: {
-        id: '9cI-t7sl99M',
-        updated_at: '2018-05-07T14:35:26-04:00',
-        username: 'steeeve',
-        name: 'Steven Coffey',
-        first_name: 'Steven',
-        last_name: 'Coffey',
-        twitter_username: 'stevendcoffey',
-        portfolio_url: 'https://stevendcoffey.com',
-        bio: null,
-        location: 'San Francisco, CA',
-        links: {
-          self: 'https://api.unsplash.com/users/steeeve',
-          html: 'https://unsplash.com/@steeeve',
-          photos: 'https://api.unsplash.com/users/steeeve/photos',
-          likes: 'https://api.unsplash.com/users/steeeve/likes',
-          portfolio: 'https://api.unsplash.com/users/steeeve/portfolio',
-          following: 'https://api.unsplash.com/users/steeeve/following',
-          followers: 'https://api.unsplash.com/users/steeeve/followers'
-        },
-        profile_image: {
-          small:
-            'https://images.unsplash.com/profile-fb-1454393135-2a74425a7756.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=32&w=32&s=1bafea1dbd2909b430799348862a3fd4',
-          medium:
-            'https://images.unsplash.com/profile-fb-1454393135-2a74425a7756.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=64&w=64&s=9c72e5806954e2588f0a88bae557e64b',
-          large:
-            'https://images.unsplash.com/profile-fb-1454393135-2a74425a7756.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128&s=516a14627c13cbbb7be1f7b3f536cbe2'
-        },
-        instagram_username: 'sdcoffey',
-        total_collections: 0,
-        total_likes: 25,
-        total_photos: 15
-      },
-      tags: [
-        {
-          title: 'architecture'
-        },
-        {
-          title: 'bridge'
-        },
-        {
-          title: 'fog'
-        },
-        {
-          title: 'san francisco'
-        },
-        {
-          title: 'golden gate bridge'
-        },
-        {
-          title: 'suspension bridge'
-        },
-        {
-          title: 'golden gate'
-        },
-        {
-          title: 'cable'
-        },
-        {
-          title: 'cloudy'
-        },
-        {
-          title: 'overcast'
-        },
-        {
-          title: 'minimal'
-        },
-        {
-          title: 'minimalist'
-        },
-        {
-          title: 'monochrome'
-        },
-        {
-          title: 'architectural'
-        },
-        {
-          title: 'tourism'
-        },
-        {
-          title: 'detail'
-        },
-        {
-          title: 'mist'
-        },
-        {
-          title: 'misty'
-        },
-        {
-          title: 'foggy'
-        },
-        {
-          title: 'suspension'
-        }
-      ],
-      photo_tags: [
-        {
-          title: 'architecture'
-        },
-        {
-          title: 'bridge'
-        },
-        {
-          title: 'fog'
-        },
-        {
-          title: 'san francisco'
-        },
-        {
-          title: 'golden gate bridge'
         }
       ]
     },
