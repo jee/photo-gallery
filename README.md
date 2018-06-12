@@ -1,5 +1,13 @@
+
 # Photo Gallery
 This is a simple photo gallery that utilizes the ReactJS frontend library. Mock photo data was generated from utilizing the Unsplash API and using the response ([see here](https://github.com/jee/photo-gallery/blob/master/src/utils/mock-api-data.js)).
+
+> When a user is using a **laptop**, **desktop computer**, or a **mobile
+> phone in landscape orientation**, "chevron" selectors are used to
+> navigate between photos.
+>
+> When a user is using a **mobile phone in portrait orientation**, the
+> user can swipe to navigate between photos.
 
 Though, this particular photo gallery implementation does not utilize Redux, the design pattern tries to closely follow Dan Abramov's "Presentational and Container Components" pattern.
 
@@ -16,7 +24,7 @@ This results in a file hierarchy that looks like:
       |__ Navigation      (Pres.)
 ```
 
-Checklist:
+## Checklist:
 - [x] The PhotoGallery component should take in an array of images.
 - [x] Each image will have a url and a caption.
 - [x] The captions should be displayed over the image.
@@ -34,6 +42,25 @@ Checklist:
 
 This project was also bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+## Test Coverage
+All tests were written using Jest and Enzyme!
+```
+-----------------------------|----------|----------|----------|----------|-------------------|
+File                         |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
+-----------------------------|----------|----------|----------|----------|-------------------|
+All files                    |      100 |    88.89 |      100 |      100 |                   |
+ features                    |      100 |      100 |      100 |      100 |                   |
+  App.js                     |      100 |      100 |      100 |      100 |                   |
+ features/gallery/components |      100 |    83.33 |      100 |      100 |                   |
+  caption.js                 |      100 |      100 |      100 |      100 |                   |
+  navigation.js              |      100 |      100 |      100 |      100 |                   |
+  photo-counter.js           |      100 |      100 |      100 |      100 |                   |
+  photo-gallery.js           |      100 |      100 |      100 |      100 |                   |
+  photo.js                   |      100 |       75 |      100 |      100 |                14 |
+ features/gallery/containers |      100 |    91.67 |      100 |      100 |                   |
+  photo-gallery-container.js |      100 |    91.67 |      100 |      100 |                34 |
+-----------------------------|----------|----------|----------|----------|-------------------|
+```
 ## Other notes
 * All mockData photos are from [Unsplash](https://unsplash.com/)
 * The Golden Gate favicon was made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> and is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
