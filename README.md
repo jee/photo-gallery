@@ -1,6 +1,6 @@
 
 # Photo Gallery
-This is a simple photo gallery that utilizes the ReactJS frontend library. Mock photo data was generated from utilizing the Unsplash API and using the response ([see here](https://github.com/jee/photo-gallery/blob/master/src/utils/mock-api-data.js)).
+This is a simple photo gallery that utilizes the ReactJS frontend library. Mock photo data was generated from utilizing the Unsplash API and using the response ([see here](https://github.com/jee/photo-gallery/blob/master/src/utils/mock-api-data.js)). This project is [deployed on Heroku](https://photo-gallery-jee.herokuapp.com/)
 
 > When a user is using a **laptop**, **desktop computer**, or a **mobile
 > phone in landscape orientation**, "chevron" selectors are used to
