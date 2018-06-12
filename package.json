@@ -2,6 +2,9 @@
   "name": "photo-gallery",
   "version": "0.1.0",
   "private": true,
+  "jest": {
+    "collectCoverageFrom": ["src/features/**"]
+  },
   "dependencies": {
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
